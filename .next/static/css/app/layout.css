@@ -1,0 +1,345 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --navy: #0f1e3d;
+  --navy-light: #1c3560;
+  --gold: #c9a24b;
+  --bg: #f4f6fa;
+  --card: #ffffff;
+  --border: #e2e6ee;
+  --text: #182238;
+  --text-muted: #6b7385;
+  --green: #1e8e5a;
+  --amber: #b5820c;
+  --red: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--navy);
+  color: white;
+  padding: 14px 28px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 15px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: #b9c2d8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #dbe2f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-links a.active {
+  background: var(--navy-light);
+  color: white;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  margin-right: 6px;
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+
+.live-indicator {
+  font-size: 12px;
+  color: #b9c2d8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 28px 60px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 18px;
+  gap: 18px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.list-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.list-item-title {
+  font-weight: 600;
+}
+
+.list-item-sub {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge-adviser { background: #e5edff; color: #2952cc; }
+.badge-client { background: #fdf1e0; color: var(--amber); }
+.badge-both { background: #e6f7ee; color: var(--green); }
+.badge-urgent { background: #fde8e6; color: var(--red); }
+.badge-stage { background: #eef0f5; color: var(--text); }
+
+.btn {
+  border: none;
+  background: var(--navy);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--navy-light);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.progress-track {
+  height: 8px;
+  background: var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table tr.row-link {
+  cursor: pointer;
+}
+
+.table tr.row-link:hover td {
+  background: var(--bg);
+}
+
+.select {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 400;
+}
+
+.activity-item {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.activity-item + .activity-item {
+  margin-top: 8px;
+}
+
