@@ -1,0 +1,6 @@
+{
+  "name": "Royal Square Financial - Client Portal",
+  "description": "Client portal for Royal Square Financial (Pty) Ltd: real-time net worth dashboard, automated reminders, goal tracking, accident scene checklist, motor claims tracker, and policy service requests.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
