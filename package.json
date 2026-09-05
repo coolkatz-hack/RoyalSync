@@ -1,0 +1,29 @@
+{
+  "name": "royalsync",
+  "version": "1.0.0",
+  "description": "An intelligent, straight-through client management and claims orchestration platform designed to eliminate compliance paperwork and connect clients, advisers, and South Africa's top insurers in real time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolkatz-hack/RoyalSync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/coolkatz-hack/RoyalSync/issues"
+  },
+  "homepage": "https://github.com/coolkatz-hack/RoyalSync#readme",
+  "dependencies": {
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
